@@ -1,0 +1,96 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+    font-family: "Sofia", sans-serif;
+}
+.hdpat{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.9)), url('img3/newyork1.jpeg')no-repeat ;
+    /* background-repeat: no-repeat; */
+    background-size:cover;
+    background-position: center;
+    
+
+}
+.headword{
+    /* background-color: red; */
+    /* height: 300px; */
+     width: 100%;
+     
+}
+/* .backg{ 
+    display: inline;
+    text-align: right;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.5);
+} */
+.hl{
+    width: 50px;
+    height: 3px;
+    background-color: aqua;
+}
+.ourservice{
+    background:linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.9)), url('img3/coffee.webp');
+    background-attachment:fixed;
+}
+.ab-icon-hov > i{
+    color: white;
+    background-color: rgb(11, 174, 255);
+}
+.ab-icon-hov > i:hover{
+   background-color: white !important;
+   color: rgb(11, 174, 255);
+   padding: 22px !important;
+   border: 2px solid rgb(11, 174, 255);
+   cursor: pointer;
+}
+.btn:hover{
+    background-color:rgb(11, 174, 255) !important;
+}
+.transpart{
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('img3/trans-back.jpeg')no-repeat;
+    background-position: center;
+    background-attachment:fixed;
+    background-size: cover;
+}
+.txtimo{
+    background-color: rgba(235, 235, 235, 0.54);
+}
+.sara-image,.goodman-img{
+    width:100%;
+    border: 5px solid white;
+}
+sub,sup{
+    color: lightblue;
+}
+.ourteam{
+    background-color:rgba(204, 193, 193, 0.597);
+}
+.team-icon{
+    color: gray;
+}
+.contactiii,div > i{
+    padding-bottom: 20px;
+    font-size: large;
+    color: rgb(26, 160, 160);
+}
+.contactiii,div > small{
+    font-size: 13pt;
+    color: black;
+}
+input,textarea{
+    border-radius: 0px !important;
+    box-shadow: 0.5px -0.2px 3px 0.2px black;
+}
+input:hover,textarea:hover{
+    pointer-events: all;
+    background-color: lightcyan !important;
+}
+@media screen and (min-width:2px) and (max-width:992px) {
+    .rank,.rank2,.rank3{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .rank2{
+        flex-direction: column-reverse;
+    }
+}
