@@ -84,6 +84,27 @@ input:hover,textarea:hover{
     pointer-events: all;
     background-color: lightcyan !important;
 }
+.hover-zoom{
+    opacity: 0.8;
+}
+.hover-zoom:hover{
+    cursor: pointer;
+    border-radius: 10px;
+    transform: scale(1.1);
+    opacity: 1;
+
+}
+/* #error{
+    visibility: hidden;
+} */
+.err{
+    visibility: visible;
+
+    color: red;
+}
+.ok{
+    visibility: hidden;
+}
 @media screen and (min-width:2px) and (max-width:992px) {
     .rank,.rank2,.rank3{
         width: 100%;

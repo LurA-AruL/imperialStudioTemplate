@@ -9,6 +9,40 @@ particlesJS.load('particles-js', 'particles.json', function() {
 });
 */
 
+function subcriBtn(){
+  alert("Thanks for Subcribe this page")
+}
+
+let fname = document.getElementsByTagName('input')[0];
+let email = document.getElementsByTagName('input')[1];
+let subject = document.getElementsByTagName('input')[2];
+let errormsg = document.getElementById('error');
+// let errormsg = document.getElementsByClassName('error')
+
+fname.addEventListener('keydown', validation);
+subject.addEventListener('keydown', validation);
+
+ 
+function validation(){
+
+  if(this.value.length < 5 ){
+    errormsg.setAttribute('class', 'err');
+     errormsg.innerHTML = "name to short";
+  }
+  if(this.value.length > 5){
+    errormsg.setAttribute('class', 'ok');
+  }
+  if(this.value.length > 15){
+    errormsg.setAttribute('class', 'err');
+    errormsg.innerHTML = "name to long";
+  }
+  // console.log(fname.value.length);
+
+  // console.log(fname.value);
+}
+
+
+
 /* Otherwise just put the config content (json): */
 
 particlesJS('particles-js',
